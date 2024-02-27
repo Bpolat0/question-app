@@ -6,7 +6,7 @@ import Counter from '../Counter/Counter';
 import MyContext from '../../Contexts/MyContext';
 import Result from '../Result/Result';
 
-function Question( {questions, setQuestions} ) {
+function Question() {
 
     const {currentQuestionIndex, setCurrentQuestionIndex, setCounter, toggleOptions} = useContext(MyContext)
 
@@ -21,8 +21,6 @@ function Question( {questions, setQuestions} ) {
 
     function checkAnswer(chosen, option){
         
-
-
         setResult(prevResult => prevResult.map((item, index) => {
             if (index === currentQuestionIndex) {
                 if(chosen === option){
@@ -52,13 +50,10 @@ function Question( {questions, setQuestions} ) {
 
     const handleClick = (option, answer) => {
     checkAnswer(option, answer);
-    console.log(result)
     setCounter(30)
     toggleOptions()
     setCurrentQuestionIndex(currentQuestionIndex + 1);
     };
-      
-    console.log(exams.length)
 
     return (
         <>

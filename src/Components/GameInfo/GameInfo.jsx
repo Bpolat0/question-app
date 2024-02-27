@@ -1,10 +1,10 @@
 import React from 'react'
 
-function GameInfo({ setIsGameStarted, isGameStarted }) {
+function GameInfo({ setIsGameStarted}) {
 
     const handleClick = () => {
         setIsGameStarted(true);
-        console.log(isGameStarted.toString());
+        
     }
 
     return (

@@ -2,11 +2,11 @@ import React, { useEffect, useState, useContext } from 'react'
 import '../Question/question.css'
 import MyContext from '../../Contexts/MyContext'
 
-function Counter( {count, setCount} ) {
+function Counter() {
     const {counter, setCounter,currentQuestionIndex, setCurrentQuestionIndex, toggleOptions} = useContext(MyContext)
     
     useEffect(() => {
-        console.log(currentQuestionIndex)
+        
 
         const sayıcı = setTimeout(() => {
             setCounter(counter - 1)
