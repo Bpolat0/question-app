@@ -1,0 +1,35 @@
+.result-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid salmon;
+    color: black;
+}
+
+.result-card{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid salmon;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.q-index{
+    font-size: 30px;
+}
+
+.correct{
+    color: green;
+}
+
+.wrong{
+    color: red;
+}
