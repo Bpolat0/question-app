@@ -7,11 +7,8 @@ const MyContext = createContext();
 // Context'i sağlayıcı (provider) bileşenini oluştur
 export const MyContextProvider = ({ children }) => {
 
-
-
     function toggleOptions() {
         const options = document.querySelectorAll(".options")
-        console.log(options)
         options.forEach(option => {
             option.classList.toggle("hide");
         });
